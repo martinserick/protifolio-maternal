@@ -98,11 +98,14 @@
       <div class="artista-grid">
         <div class="artista-card reveal-left">
           <div class="artista-image-wrap">
-            <img
-              src="assets/images/img-001.jpg"
-              alt="Almeida Júnior"
-              class="artista-img"
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/img-000.png" />
+              <img
+                src="assets/images/img-001.jpg"
+                alt="Almeida Júnior"
+                class="artista-img"
+              />
+            </picture>
             <div class="artista-img-overlay"></div>
           </div>
           <div class="artista-badge">1850 — 1899</div>
@@ -200,10 +203,58 @@
           </div>
         </div>
       </div>
+
+      <!-- Painel: Da referência à criação -->
+      <div class="obra-violas-strip reveal-up">
+        <div class="strip-header">
+          <span class="strip-tag">✦ Da Referência à Criação ✦</span>
+          <p>Após observar a obra e conhecer a viola, as crianças criaram as suas!</p>
+        </div>
+        <div class="strip-grid">
+          <div class="strip-item reveal-left">
+            <div class="strip-img-wrap">
+              <img
+                src="assets/images/img-003.png"
+                alt="Tipos de viola observados"
+                class="strip-img"
+              />
+              <div class="strip-img-overlay"></div>
+            </div>
+            <div class="strip-caption">
+              <span class="strip-step">01</span>
+              <strong>Observamos</strong>
+              <p>Tipos de viola e seus detalhes</p>
+            </div>
+          </div>
+
+          <div class="strip-arrow reveal-up">
+            <div class="arrow-inner">
+              <span class="arrow-icon">🎸</span>
+              <span class="arrow-line"></span>
+              <span class="arrow-chevron">→</span>
+            </div>
+          </div>
+
+          <div class="strip-item reveal-right">
+            <div class="strip-img-wrap">
+              <img
+                src="assets/images/img-004.png"
+                alt="Nossas violas criadas pelos alunos"
+                class="strip-img"
+              />
+              <div class="strip-img-overlay nossa"></div>
+            </div>
+            <div class="strip-caption nossa-caption">
+              <span class="strip-step nossa-step">02</span>
+              <strong>Criamos!</strong>
+              <p>Nossas próprias violas com papelão e tecidos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
-
-  <!-- ======= A VIOLA ======= -->
   <section class="section viola-section" id="viola">
     <div class="container">
       <div class="section-header reveal-up">
