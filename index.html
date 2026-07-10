@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Violeiro — Portfólio Maternal · CEI Pequeno Einstein</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ======= CURSOR PERSONALIZADO ======= -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ======= MÚSICA DE FUNDO ======= -->
+  <audio id="bgAudio" src="assets/music/baile_de_peao.mp3" loop preload="auto"></audio>
+
+  <!-- Botão de controle de música -->
+  <button class="music-toggle" id="musicToggle" aria-label="Alternar música">
+    <span class="music-icon">♪</span>
+    <span class="music-label">Música</span>
+  </button>
+
+  <!-- ======= LOADER ======= -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-notes">
+        <span>♪</span><span>♫</span><span>♪</span>
+      </div>
+      <p>Preparando memórias...</p>
+    </div>
+  </div>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-fade">CEI Pequeno Einstein · Maternal · 2 e 3 anos</div>
+      <h1 class="hero-title reveal-up">
+        <span class="title-line">O</span>
+        <span class="title-line highlight">Violeiro</span>
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        Arte, Música e Tradições do Campo
+      </p>
+      <p class="hero-description reveal-fade">
+        Um projeto especial sobre a obra de <strong>Almeida Júnior</strong>,
+        explorando cores, sons e a beleza da cultura caipira brasileira.
+      </p>
+      <a href="#artista" class="hero-btn reveal-fade">
+        Explorar o Projeto
+        <span class="btn-arrow">↓</span>
+      </a>
+    </div>
+    <div class="hero-image-frame reveal-right">
+      <div class="frame-decoration">
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+        <img
+          src="assets/images/img-000.png"
+          alt="O Violeiro — Almeida Júnior"
+          class="hero-painting"
+        />
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>role para baixo</span>
+    </div>
+  </section>
+
+  <!-- ======= QUEM FOI ALMEIDA JÚNIOR ======= -->
+  <section class="section artista-section" id="artista">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Nosso Ponto de Partida</span>
+        <h2 class="section-title">Quem foi<br /><em>Almeida Júnior?</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="artista-grid">
+        <div class="artista-card reveal-left">
+          <div class="artista-image-wrap">
+            <img
+              src="assets/images/img-001.jpg"
+              alt="Almeida Júnior"
+              class="artista-img"
+            />
+            <div class="artista-img-overlay"></div>
+          </div>
+          <div class="artista-badge">1850 — 1899</div>
+        </div>
+
+        <div class="artista-info reveal-right">
+          <p class="artista-lead">
+            José Ferraz de Almeida Júnior nasceu em
+            <strong>Itu, São Paulo</strong> e tornou-se um dos mais
+            importantes pintores do Brasil.
+          </p>
+          <div class="facts-grid">
+            <div class="fact-item">
+              <span class="fact-icon">🏡</span>
+              <div>
+                <strong>Interior de São Paulo</strong>
+                <p>Retratava o cotidiano das pessoas do campo</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fact-icon">🎨</span>
+              <div>
+                <strong>Arte Realista</strong>
+                <p>Valorizou a cultura e os costumes brasileiros</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <span class="fact-icon">🌾</span>
+              <div>
+                <strong>Identidade Caipira</strong>
+                <p>Celebrou a vida simples e a tradição do interior</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= A OBRA ======= -->
+  <section class="section obra-section" id="obra">
+    <div class="obra-bg"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Apreciação Artística</span>
+        <h2 class="section-title">A Obra:<br /><em>O Violeiro</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="obra-showcase">
+        <div class="obra-image-container reveal-zoom">
+          <img
+            src="assets/images/img-002.png"
+            alt="A obra O Violeiro"
+            class="obra-img"
+          />
+          <div class="obra-image-caption">
+            <span>O Violeiro · Almeida Júnior · 1899</span>
+          </div>
+        </div>
+
+        <div class="obra-discoveries reveal-right">
+          <h3>O que as crianças descobriram?</h3>
+          <div class="discovery-list">
+            <div class="discovery-item" data-delay="0">
+              <div class="discovery-icon">🎨</div>
+              <div class="discovery-text">
+                <strong>Cores</strong>
+                <p>Identificaram as cores quentes e terrosas da pintura</p>
+              </div>
+            </div>
+            <div class="discovery-item" data-delay="100">
+              <div class="discovery-icon">🔷</div>
+              <div class="discovery-text">
+                <strong>Formas</strong>
+                <p>Reconheceram formas geométricas no instrumento</p>
+              </div>
+            </div>
+            <div class="discovery-item" data-delay="200">
+              <div class="discovery-icon">👆</div>
+              <div class="discovery-text">
+                <strong>Texturas</strong>
+                <p>Imaginaram como seriam as texturas da madeira e das cordas</p>
+              </div>
+            </div>
+            <div class="discovery-item" data-delay="300">
+              <div class="discovery-icon">🎵</div>
+              <div class="discovery-text">
+                <strong>Sons</strong>
+                <p>Imaginaram os sons produzidos pela viola na pintura</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= A VIOLA ======= -->
+  <section class="section viola-section" id="viola">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Descoberta Musical</span>
+        <h2 class="section-title">Conhecemos<br /><em>a Viola</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="viola-intro reveal-up">
+        <p>
+          Conhecemos diferentes tipos de viola e percebemos que elas possuem
+          <strong>formatos, cores e tamanhos variados</strong>. A viola faz
+          parte da cultura caipira e acompanha histórias, cantorias e tradições
+          do interior.
+        </p>
+      </div>
+
+      <div class="violas-gallery">
+        <div class="viola-card reveal-up" data-delay="0">
+          <div class="viola-img-wrap">
+            <img
+              src="assets/images/img-003.png"
+              alt="Tipos de viola"
+              class="viola-gallery-img"
+            />
+          </div>
+          <div class="viola-card-info">
+            <h4>Tipos de Viola</h4>
+            <p>Diferentes formatos, cores e detalhes que encantaram as crianças</p>
+          </div>
+        </div>
+
+        <div class="viola-card reveal-up" data-delay="150">
+          <div class="viola-img-wrap">
+            <img
+              src="assets/images/img-004.png"
+              alt="Nossas violas"
+              class="viola-gallery-img"
+            />
+          </div>
+          <div class="viola-card-info">
+            <h4>Nossas Violas!</h4>
+            <p>Cada criança criou sua própria viola com papelão, tecidos e botões</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft-highlight reveal-up">
+        <div class="craft-icon">🎸</div>
+        <blockquote>
+          "Após conhecer diferentes tipos de viola, as crianças confeccionaram
+          suas próprias violas utilizando papelão, tecidos, botões e outros
+          materiais. <strong>Cada produção foi única</strong>, valorizando a
+          criatividade e a expressão artística."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= POEMA ======= -->
+  <section class="section poema-section" id="poema">
+    <div class="poema-bg-shapes">
+      <div class="poema-circle c1"></div>
+      <div class="poema-circle c2"></div>
+      <div class="poema-circle c3"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Expressão Literária</span>
+        <h2 class="section-title"><em>Poema da Turma</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="poema-card reveal-zoom">
+        <div class="poema-music-notes">
+          <span class="floating-note n1">♪</span>
+          <span class="floating-note n2">♫</span>
+          <span class="floating-note n3">♪</span>
+          <span class="floating-note n4">♫</span>
+        </div>
+        <h3 class="poema-title">A Viola Faz o Som do Coração</h3>
+        <div class="poema-lines">
+          <p class="poema-line" data-delay="0">A viola faz um som,</p>
+          <p class="poema-line" data-delay="300">Que alegra o coração.</p>
+          <p class="poema-line" data-delay="600">No campo mora a amizade,</p>
+          <p class="poema-line" data-delay="900">A música e a tradição.</p>
+        </div>
+        <div class="poema-signature">✦ Turma Maternal · CEI Pequeno Einstein ✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CULTURA E BARRETOS ======= -->
+  <section class="section barretos-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Cultura e Tradição</span>
+        <h2 class="section-title">Tropeiros,<br /><em>Peões e Barretos</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="barretos-grid">
+        <div class="barretos-card reveal-left">
+          <div class="barretos-icon">🐴</div>
+          <h4>Os Tropeiros</h4>
+          <p>
+            Conversamos sobre os tropeiros que percorriam os campos do Brasil,
+            carregando histórias, músicas e tradições.
+          </p>
+        </div>
+        <div class="barretos-card reveal-up">
+          <div class="barretos-icon">🤠</div>
+          <h4>Os Peões</h4>
+          <p>
+            Conhecemos os peões e sua importância para a cultura do campo,
+            valorizando as tradições brasileiras.
+          </p>
+        </div>
+        <div class="barretos-card reveal-right">
+          <div class="barretos-icon">🎶</div>
+          <h4>Festa de Barretos</h4>
+          <p>
+            Relacionamos a obra com a Festa do Peão de Barretos, celebrando
+            a viola como símbolo da cultura caipira.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ATELIÊ ======= -->
+  <section class="section atelie-section" id="atelie">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Mãos na Arte</span>
+        <h2 class="section-title">Nosso Ateliê<br /><em>de Releitura</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="atelie-timeline">
+        <div class="timeline-item reveal-left" data-step="1">
+          <div class="timeline-image-wrap">
+            <img
+              src="assets/images/img-003.png"
+              alt="Observando a obra"
+              class="timeline-img"
+            />
+            <div class="timeline-img-shine"></div>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-step">01</span>
+            <h4>Observando a Obra</h4>
+            <p>Antes de criar, as crianças apreciaram e analisaram a pintura original de Almeida Júnior com atenção e curiosidade.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right" data-step="2">
+          <div class="timeline-content">
+            <span class="timeline-step">02</span>
+            <h4>Explorando Materiais</h4>
+            <p>Tintas, materiais naturais e texturas diversas foram explorados livremente, desenvolvendo a sensibilidade artística.</p>
+          </div>
+          <div class="timeline-image-wrap">
+            <img
+              src="assets/images/img-004.png"
+              alt="Explorando tintas"
+              class="timeline-img"
+            />
+            <div class="timeline-img-shine"></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" data-step="3">
+          <div class="timeline-image-wrap">
+            <img
+              src="assets/images/img-005.png"
+              alt="A releitura"
+              class="timeline-img"
+            />
+            <div class="timeline-img-shine"></div>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-step">03</span>
+            <h4>A Releitura</h4>
+            <p>Cada criança criou sua versão inspirada em "O Violeiro", expressando emoções, imaginação e criatividade únicas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= O QUE APRENDEMOS ======= -->
+  <section class="section aprendizados-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Crescimento e Descobertas</span>
+        <h2 class="section-title"><em>O que Aprendemos</em></h2>
+        <div class="section-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+      </div>
+
+      <div class="aprendizados-grid">
+        <div class="aprendizado-item reveal-up" data-delay="0">
+          <div class="aprendizado-number">01</div>
+          <div class="aprendizado-icon">🖼️</div>
+          <p>Observamos uma obra de arte brasileira</p>
+        </div>
+        <div class="aprendizado-item reveal-up" data-delay="100">
+          <div class="aprendizado-number">02</div>
+          <div class="aprendizado-icon">🌈</div>
+          <p>Exploramos cores, formas e texturas</p>
+        </div>
+        <div class="aprendizado-item reveal-up" data-delay="200">
+          <div class="aprendizado-number">03</div>
+          <div class="aprendizado-icon">🎸</div>
+          <p>Conhecemos a viola e a cultura caipira</p>
+        </div>
+        <div class="aprendizado-item reveal-up" data-delay="300">
+          <div class="aprendizado-number">04</div>
+          <div class="aprendizado-icon">✏️</div>
+          <p>Desenvolvemos a criatividade e a expressão artística</p>
+        </div>
+        <div class="aprendizado-item reveal-up" data-delay="400">
+          <div class="aprendizado-number">05</div>
+          <div class="aprendizado-icon">🌾</div>
+          <p>Valorizamos a cultura do campo e as tradições de Barretos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MENSAGEM ÀS FAMÍLIAS ======= -->
+  <section class="section familias-section" id="familias">
+    <div class="familias-bg"></div>
+    <div class="container">
+      <div class="familias-content reveal-zoom">
+        <div class="familias-hearts">
+          <span class="heart h1">♥</span>
+          <span class="heart h2">♥</span>
+          <span class="heart h3">♥</span>
+        </div>
+        <span class="section-tag light">Com Carinho</span>
+        <h2 class="familias-title">Mensagem<br /><em>às Famílias</em></h2>
+        <div class="familias-divider">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+        <p class="familias-text">
+          Agradecemos às famílias por acompanharem este projeto. Cada produção
+          revela <strong>descobertas, criatividade</strong> e a alegria das
+          crianças ao conhecer a arte e a cultura brasileira.
+        </p>
+        <p class="familias-subtext">
+          Vocês fazem parte dessa história. Obrigada por acreditarem na
+          importância da arte na vida dos pequenos. 🎵
+        </p>
+        <div class="familias-signature">
+          <span>Com amor,</span>
+          <strong>Turma Maternal</strong>
+          <span class="familias-escola">CEI Pequeno Einstein</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-notes">
+      <span>♪</span><span>♫</span><span>♩</span><span>♫</span><span>♪</span>
+    </div>
+    <p>
+      <strong>O Violeiro</strong> · Projeto Maternal · CEI Pequeno Einstein
+      <br/><span style="opacity:.6">Arte, Música e Tradições do Campo</span>
+    </p>
+    <p class="footer-sub">Feito com 💛 para os pais e responsáveis</p>
+  </footer>
+
+  <!-- ======= BACK TO TOP ======= -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/music.js"></script>
+</body>
+</html>
