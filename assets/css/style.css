@@ -568,8 +568,70 @@ body:has(button:hover) .cursor-ring {
   font-size: 1.6rem;
   color: var(--color-brown);
   margin-bottom: 28px;
+  text-align: center;
+}
+
+/* Comparativo lado a lado */
+.obra-comparativo {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: stretch;
+  margin-bottom: 56px;
+}
+.obra-comparativo .obra-image-container {
+  box-shadow: var(--shadow-lg);
+}
+.obra-comparativo .obra-img {
+  height: 420px;
+}
+
+.obra-comparativo-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 4px;
+}
+.comp-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.comp-line {
+  flex: 1;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-gold), var(--color-terracotta));
+  opacity: .4;
+  border-radius: 2px;
+  min-height: 32px;
+}
+.comp-label {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1;
+}
+
+/* Discoveries em grade */
+.obra-discoveries {
+  margin-top: 8px;
 }
 .discovery-list { display: flex; flex-direction: column; gap: 16px; }
+.discovery-list--row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.discovery-list--row .discovery-item {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+}
+.discovery-list--row .discovery-icon { font-size: 2.2rem; }
 .discovery-item {
   display: flex;
   align-items: flex-start;
@@ -1485,6 +1547,30 @@ body:has(button:hover) .cursor-ring {
   }
   .arrow-line { height: 20px; }
   .strip-img-wrap { height: 220px; }
+
+  /* Comparativo em coluna no mobile */
+  .obra-comparativo {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .obra-comparativo .obra-img { height: 260px; }
+  .obra-comparativo-divider {
+    flex-direction: row;
+    padding: 4px 0;
+    gap: 12px;
+  }
+  .comp-line {
+    flex: 1;
+    width: auto;
+    height: 2px;
+    min-height: unset;
+    background: linear-gradient(to right, var(--color-gold), var(--color-terracotta));
+  }
+
+  /* Discoveries em coluna no mobile */
+  .discovery-list--row {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .obra-showcase, .violas-gallery,
   .barretos-grid, .timeline-item { grid-template-columns: 1fr; }
