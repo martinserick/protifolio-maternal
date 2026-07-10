@@ -39,7 +39,10 @@
   --transition-slow:   .7s cubic-bezier(.4,0,.2,1);
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font-sans);
@@ -47,6 +50,8 @@ body {
   color: var(--color-brown);
   overflow-x: hidden;
   cursor: none;
+  width: 100%;
+  max-width: 100vw;
 }
 
 img {
@@ -154,6 +159,7 @@ body:has(button:hover) .cursor-ring {
 .section {
   padding: 100px 0;
   position: relative;
+  overflow-x: clip;
 }
 
 .section-header {
@@ -224,6 +230,7 @@ body:has(button:hover) .cursor-ring {
   );
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .hero-bg-shapes {
@@ -1291,8 +1298,8 @@ body:has(button:hover) .cursor-ring {
   transition: opacity .8s cubic-bezier(.4,0,.2,1), transform .8s cubic-bezier(.4,0,.2,1);
 }
 .reveal-up    { transform: translateY(50px); }
-.reveal-left  { transform: translateX(-60px); }
-.reveal-right { transform: translateX(60px); }
+.reveal-left  { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
 .reveal-fade  { transform: translateY(0); }
 .reveal-zoom  { transform: scale(.92); }
 
@@ -1316,8 +1323,11 @@ body:has(button:hover) .cursor-ring {
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 100px 24px 60px; }
+  .hero { padding: 80px 24px 60px; }
   .hero-title { font-size: 4rem; }
+
+  .reveal-left  { transform: translateX(-20px); }
+  .reveal-right { transform: translateX(20px); }
 
   .artista-grid, .obra-showcase, .violas-gallery,
   .barretos-grid, .timeline-item { grid-template-columns: 1fr; }
