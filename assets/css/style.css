@@ -1345,3 +1345,10 @@ body:has(button:hover) .cursor-ring {
   .aprendizados-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 3rem; }
 }
+
+/* Cursor personalizado apenas em dispositivos com mouse */
+@media (hover: none) and (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor-dot,
+  .cursor-ring { display: none; }
+}
