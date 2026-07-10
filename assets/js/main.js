@@ -5,9 +5,11 @@
 'use strict';
 
 // ============================================================
-// CURSOR PERSONALIZADO
+// CURSOR PERSONALIZADO (apenas em dispositivos com mouse)
 // ============================================================
 (function initCursor() {
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+
   const dot  = document.querySelector('.cursor-dot');
   const ring = document.querySelector('.cursor-ring');
   if (!dot || !ring) return;
